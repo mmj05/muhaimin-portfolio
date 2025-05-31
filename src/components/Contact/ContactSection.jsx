@@ -18,11 +18,13 @@ const ContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* Contact Form */}
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8 hover:border-white/30 transition-all duration-500">
             <h3 className="text-2xl font-bold mb-6 text-center">Send Me a Message</h3>
             <ContactForm />
           </div>
 
+          {/* Contact Info */}
           <div className="space-y-8">
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8 hover:border-white/30 transition-all duration-500">
               <p className="text-lg text-gray-300 mb-8">
@@ -52,24 +54,6 @@ const ContactSection = () => {
                   <span>View My Code</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform ml-auto" />
                 </a>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300 text-center">
-                <Github className="w-8 h-8 text-blue-400 mb-3 group-hover:scale-110 transition-transform mx-auto" />
-                <h3 className="font-semibold mb-1">GitHub</h3>
-                <p className="text-sm text-gray-400">Check out my code</p>
-              </div>
-              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300 text-center">
-                <Mail className="w-8 h-8 text-cyan-400 mb-3 group-hover:scale-110 transition-transform mx-auto" />
-                <h3 className="font-semibold mb-1">Email</h3>
-                <p className="text-sm text-gray-400">Drop me a line</p>
-              </div>
-              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300 text-center">
-                <Terminal className="w-8 h-8 text-purple-400 mb-3 group-hover:scale-110 transition-transform mx-auto" />
-                <h3 className="font-semibold mb-1">Projects</h3>
-                <p className="text-sm text-gray-400">See my work</p>
               </div>
             </div>
           </div>
