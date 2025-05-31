@@ -14,7 +14,7 @@ const HeroSection = ({ heroRef }) => {
       <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-600/10 rounded-full filter blur-2xl animate-float"></div>
       
       <div className="max-w-7xl mx-auto z-10 relative">
-        <div className="grid lg:grid-cols-2 gap-20 items-center min-h-[80vh]">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center min-h-[80vh]">
           
           <div className="text-center lg:text-left order-2 lg:order-1 space-y-8">
             <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-emerald-500/10 via-green-500/10 to-emerald-500/10 backdrop-blur-sm rounded-full border border-emerald-400/30 shadow-lg shadow-emerald-500/10">
@@ -22,151 +22,130 @@ const HeroSection = ({ heroRef }) => {
                 <div className="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></div>
                 <div className="absolute inset-0 w-2.5 h-2.5 bg-emerald-400 rounded-full animate-ping"></div>
               </div>
-              <span className="text-sm text-emerald-300 font-medium tracking-wide">Available for opportunities</span>
+              <span className="text-sm text-emerald-300 font-medium tracking-wide">AVAILABLE FOR OPPORTUNITIES</span>
             </div>
             
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[0.9] tracking-tight">
-                  <span className="block text-white mb-2 drop-shadow-lg">
-                    Hi, I'm{' '}
-                    <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent animate-gradient">
-                      Muhaimin
-                    </span>
-                  </span>
-                  <span className="block bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent font-bold">
-                    Jobayer
-                  </span>
-                </h1>
-                
-                <div className="space-y-2">
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                    Full-Stack Software Engineer
-                  </h2>
-                  <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mx-auto lg:mx-0"></div>
-                </div>
-              </div>
+            <div className="space-y-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+                <span className="block text-white mb-2">
+                  Hi, I'm
+                </span>
+                <span className="block bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                  Muhaimin Jobayer
+                </span>
+              </h1>
               
-              <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-2xl font-light">
-                Transforming{' '}
-                <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-semibold">
-                  complex challenges
-                </span>{' '}
-                into{' '}
-                <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent font-semibold">
-                  elegant, scalable solutions
-                </span>{' '}
-                through innovative design and cutting-edge technology.
-              </p>
+              <div className="space-y-4">
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white/90">
+                  Full-Stack Software Engineer
+                </p>
+                <p className="text-lg sm:text-xl lg:text-2xl text-gray-400 leading-relaxed max-w-2xl">
+                  I transform{' '}
+                  <span className="text-white font-medium">complex challenges</span>{' '}
+                  into{' '}
+                  <span className="text-white font-medium">elegant, scalable solutions</span>{' '}
+                  using modern technologies and best practices.
+                </p>
+              </div>
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <a
                 href="#projects"
-                className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 relative overflow-hidden font-semibold"
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-semibold text-white shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <Code2 className="w-5 h-5 relative z-10" />
-                <span className="relative z-10">View My Work</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform relative z-10" />
+                <span>View My Work</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#contact"
-                className="group flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105 font-semibold"
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/20 font-semibold hover:bg-white/10 hover:border-white/30 transition-all duration-300"
               >
                 <span>Get In Touch</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
 
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <div className="flex gap-4 justify-center lg:justify-start pt-4">
               <a
                 href="https://github.com/mmj05"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 hover:shadow-lg transition-all duration-300 hover:scale-110 group"
+                className="group p-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
               >
-                <Github className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a
                 href="https://www.linkedin.com/in/muhaimin-jobayer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 hover:shadow-lg transition-all duration-300 hover:scale-110 group"
+                className="group p-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
               >
-                <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a
                 href={resumePDF}
                 download="Muhaimin_Jobayer_Resume.pdf"
-                className="p-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 hover:shadow-lg transition-all duration-300 hover:scale-110 group"
+                className="group p-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
               >
-                <Download className="w-6 h-6 group-hover:translate-y-1 transition-transform" />
+                <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
             </div>
           </div>
 
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/10 via-cyan-400/5 to-purple-500/10 rounded-2xl blur-xl opacity-60"></div>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/20 via-cyan-400/20 to-purple-500/20 blur-3xl"></div>
               
-              <div className="relative w-80 h-80 lg:w-[400px] lg:h-[400px]">
-                <div className="relative w-full h-full bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-white/10 backdrop-blur-sm overflow-hidden group-hover:scale-[1.02] transition-transform duration-700 shadow-2xl">
-                  <img
-                    src={workFromHomePng}
-                    alt="Muhaimin Jobayer - Full Stack Developer"
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:brightness-110"
-                  />
-                  
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5"></div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-900/5 via-transparent to-cyan-900/5"></div>
-                </div>
+              <div className="relative w-full max-w-[500px] group">
+                <img
+                  src={workFromHomePng}
+                  alt="Muhaimin working on laptop"
+                  className="w-full h-auto object-contain filter drop-shadow-2xl transition-all duration-700 group-hover:scale-[1.02] group-hover:brightness-110"
+                />
                 
-                <div className="absolute -top-4 left-16 p-3 bg-black/30 backdrop-blur-md rounded-xl border border-white/20 animate-float opacity-90 shadow-lg">
-                  <Code2 className="w-5 h-5 text-blue-400" />
+                <div className="absolute -top-6 left-20 p-3 bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-md rounded-xl border border-blue-400/20 animate-float">
+                  <Code2 className="w-6 h-6 text-blue-400" />
                 </div>
-                <div className="absolute top-20 -right-6 p-3 bg-black/30 backdrop-blur-md rounded-xl border border-white/20 animate-float animation-delay-500 opacity-90 shadow-lg">
-                  <Sparkles className="w-5 h-5 text-cyan-400" />
+                <div className="absolute top-24 -right-8 p-3 bg-gradient-to-br from-cyan-500/20 to-cyan-600/20 backdrop-blur-md rounded-xl border border-cyan-400/20 animate-float animation-delay-500">
+                  <Sparkles className="w-6 h-6 text-cyan-400" />
                 </div>
-                <div className="absolute bottom-16 -left-4 p-3 bg-black/30 backdrop-blur-md rounded-xl border border-white/20 animate-float animation-delay-1000 opacity-90 shadow-lg">
-                  <span className="text-base font-mono text-purple-400 font-bold">{`</>`}</span>
+                <div className="absolute bottom-20 -left-6 p-3 bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-md rounded-xl border border-purple-400/20 animate-float animation-delay-1000">
+                  <span className="text-lg font-mono text-purple-400">{`</>`}</span>
                 </div>
-                <div className="absolute bottom-1/3 -right-2 p-2 bg-black/30 backdrop-blur-md rounded-lg border border-white/20 animate-float animation-delay-700 opacity-90 shadow-lg">
-                  <Database className="w-4 h-4 text-emerald-400" />
+                <div className="absolute bottom-1/3 -right-4 p-3 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 backdrop-blur-md rounded-xl border border-emerald-400/20 animate-float animation-delay-700">
+                  <Database className="w-5 h-5 text-emerald-400" />
                 </div>
-                <div className="absolute top-1/3 -left-6 p-2 bg-black/30 backdrop-blur-md rounded-lg border border-white/20 animate-float animation-delay-300 opacity-90 shadow-lg">
-                  <Terminal className="w-4 h-4 text-orange-400" />
+                <div className="absolute top-1/3 -left-8 p-3 bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-md rounded-xl border border-orange-400/20 animate-float animation-delay-300">
+                  <Terminal className="w-5 h-5 text-orange-400" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-20 text-center">
-          <p className="text-sm text-gray-400 mb-8 font-medium tracking-wider uppercase">Technologies I Work With</p>
+        <div className="mt-16 text-center">
+          <p className="text-sm text-gray-500 mb-6 font-semibold tracking-[0.2em] uppercase">Technologies I Work With</p>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              { name: 'React', color: 'from-blue-400 to-blue-600' },
-              { name: 'TypeScript', color: 'from-blue-400 to-cyan-500' },
-              { name: 'Spring Boot', color: 'from-green-400 to-green-600' },
-              { name: 'Java', color: 'from-orange-400 to-red-500' },
-              { name: 'PostgreSQL', color: 'from-blue-500 to-indigo-600' }
+              { name: 'React', gradient: 'from-blue-400 to-blue-600', shadow: 'shadow-blue-500/20' },
+              { name: 'TypeScript', gradient: 'from-blue-400 to-cyan-500', shadow: 'shadow-cyan-500/20' },
+              { name: 'Spring Boot', gradient: 'from-green-400 to-green-600', shadow: 'shadow-green-500/20' },
+              { name: 'Java', gradient: 'from-orange-400 to-red-500', shadow: 'shadow-orange-500/20' },
+              { name: 'PostgreSQL', gradient: 'from-blue-500 to-indigo-600', shadow: 'shadow-indigo-500/20' }
             ].map((tech, index) => (
               <div
                 key={tech.name}
-                className="group relative px-6 py-3 backdrop-blur-sm rounded-full border border-white/20 text-sm hover:border-white/40 transition-all duration-300 hover:scale-110 cursor-default shadow-lg overflow-hidden"
+                className={`group px-6 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 cursor-default ${tech.shadow} shadow-lg`}
                 style={{
                   opacity: 0,
                   animation: `fadeInUp 0.8s ease-out forwards`,
-                  animationDelay: `${1.2 + index * 0.15}s`,
-                  background: tech.color.includes('blue-400 to-blue-600') ? 'linear-gradient(to right, #60a5fa, #2563eb)' :
-                             tech.color.includes('blue-400 to-cyan-500') ? 'linear-gradient(to right, #60a5fa, #06b6d4)' :
-                             tech.color.includes('green-400 to-green-600') ? 'linear-gradient(to right, #4ade80, #16a34a)' :
-                             tech.color.includes('orange-400 to-red-500') ? 'linear-gradient(to right, #fb923c, #ef4444)' :
-                             tech.color.includes('blue-500 to-indigo-600') ? 'linear-gradient(to right, #3b82f6, #4338ca)' : ''
+                  animationDelay: `${1.2 + index * 0.15}s`
                 }}
               >
-                <span className="relative z-10 font-semibold text-white">{tech.name}</span>
+                <span className={`font-medium bg-gradient-to-r ${tech.gradient} bg-clip-text text-transparent`}>
+                  {tech.name}
+                </span>
               </div>
             ))}
           </div>
