@@ -103,22 +103,6 @@ const HeroSection = ({ heroRef }) => {
                   alt="Muhaimin working on laptop"
                   className="w-full h-auto object-contain filter drop-shadow-2xl transition-all duration-700 group-hover:scale-[1.02] group-hover:brightness-110"
                 />
-                
-                <div className="absolute -top-6 left-20 p-3 bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-md rounded-xl border border-blue-400/20 animate-float">
-                  <Code2 className="w-6 h-6 text-blue-400" />
-                </div>
-                <div className="absolute top-24 -right-8 p-3 bg-gradient-to-br from-cyan-500/20 to-cyan-600/20 backdrop-blur-md rounded-xl border border-cyan-400/20 animate-float animation-delay-500">
-                  <Sparkles className="w-6 h-6 text-cyan-400" />
-                </div>
-                <div className="absolute bottom-20 -left-6 p-3 bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-md rounded-xl border border-purple-400/20 animate-float animation-delay-1000">
-                  <span className="text-lg font-mono text-purple-400">{`</>`}</span>
-                </div>
-                <div className="absolute bottom-1/3 -right-4 p-3 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 backdrop-blur-md rounded-xl border border-emerald-400/20 animate-float animation-delay-700">
-                  <Database className="w-5 h-5 text-emerald-400" />
-                </div>
-                <div className="absolute top-1/3 -left-8 p-3 bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-md rounded-xl border border-orange-400/20 animate-float animation-delay-300">
-                  <Terminal className="w-5 h-5 text-orange-400" />
-                </div>
               </div>
             </div>
           </div>
