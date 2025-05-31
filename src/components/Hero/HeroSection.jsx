@@ -1,6 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Download, ArrowRight, Code2, Sparkles, Terminal, Database } from 'lucide-react';
-import profilePicture from '../../assets/profile-picture.jpg';
+import workFromHomePng from '../../assets/work-from-home.png';
+import resumePDF from '../../assets/resume.pdf';
 
 const HeroSection = ({ heroRef }) => {
   return (
@@ -24,11 +25,11 @@ const HeroSection = ({ heroRef }) => {
                   <div className="w-full h-full bg-gradient-to-br from-slate-900/80 via-black/60 to-slate-800/80 rounded-full backdrop-blur-sm"></div>
                 </div>
                 
-                <div className="absolute inset-1 rounded-full overflow-hidden group-hover:scale-[1.02] transition-transform duration-700">
+                <div className="absolute inset-1 group-hover:scale-[1.02] transition-transform duration-700">
                   <img
-                    src={profilePicture}
-                    alt="Muhaimin Jobayer - Full-Stack Software Engineer"
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:brightness-105"
+                    src={workFromHomePng}
+                    alt="Avatar working on laptop"
+                    className="w-full h-full object-contain transition-all duration-700 group-hover:brightness-105"
                   />
                   
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></div>
@@ -119,7 +120,7 @@ const HeroSection = ({ heroRef }) => {
                 <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform" />
               </a>
               <a
-                href="/resume.pdf"
+                href={resumePDF}
                 download="Muhaimin_Jobayer_Resume.pdf"
                 className="p-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/40 hover:shadow-lg transition-all duration-300 hover:scale-110 group"
               >
