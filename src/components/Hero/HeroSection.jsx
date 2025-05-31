@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Download, ArrowRight, Code2, Sparkles, Terminal, Database } from 'lucide-react';
+import profilePicture from '../../assets/profile-picture.jpg';
 
 const HeroSection = ({ heroRef }) => {
   return (
@@ -25,7 +26,7 @@ const HeroSection = ({ heroRef }) => {
                 
                 <div className="absolute inset-1 rounded-full overflow-hidden group-hover:scale-[1.02] transition-transform duration-700">
                   <img
-                    src="/profile-picture.jpg"
+                    src={profilePicture}
                     alt="Muhaimin Jobayer - Full-Stack Software Engineer"
                     className="w-full h-full object-cover transition-all duration-700 group-hover:brightness-105"
                   />
