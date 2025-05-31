@@ -5,7 +5,7 @@ import resumePDF from '../../assets/resume.pdf';
 
 const HeroSection = ({ heroRef }) => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-16 relative overflow-hidden" ref={heroRef}>
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-4 pt-16 relative overflow-hidden" ref={heroRef}>
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-black to-blue-900/30"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent"></div>
       
@@ -26,24 +26,24 @@ const HeroSection = ({ heroRef }) => {
             </div>
             
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
-                <span className="block text-white mb-2">
-                  Hi, I'm
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.1] tracking-tight">
+                <span className="text-white">
+                  Hi, I'm{' '}
                 </span>
-                <span className="block bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                   Muhaimin Jobayer
                 </span>
               </h1>
               
               <div className="space-y-4">
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white/90">
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                   Full-Stack Software Engineer
                 </p>
                 <p className="text-lg sm:text-xl lg:text-2xl text-gray-400 leading-relaxed max-w-2xl">
                   I transform{' '}
-                  <span className="text-white font-medium">complex challenges</span>{' '}
+                  <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent font-semibold">complex challenges</span>{' '}
                   into{' '}
-                  <span className="text-white font-medium">elegant, scalable solutions</span>{' '}
+                  <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold">elegant, scalable solutions</span>{' '}
                   using modern technologies and best practices.
                 </p>
               </div>
@@ -97,7 +97,7 @@ const HeroSection = ({ heroRef }) => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/20 via-cyan-400/20 to-purple-500/20 blur-3xl"></div>
               
-              <div className="relative w-full max-w-[500px] group">
+              <div className="relative w-full max-w-[400px] group">
                 <img
                   src={workFromHomePng}
                   alt="Muhaimin working on laptop"
