@@ -1,5 +1,4 @@
 import React from 'react';
-import { Github, ExternalLink } from 'lucide-react';
 
 const ProjectCard = ({ project, index, setHoveredProject }) => {
   const IconComponent = project.icon;
@@ -28,19 +27,19 @@ const ProjectCard = ({ project, index, setHoveredProject }) => {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="project-link"
+                className="project-link-text"
                 onClick={(e) => e.stopPropagation()}
               >
-                <Github className="w-5 h-5" />
+                GitHub
               </a>
               <a
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="project-link"
+                className="project-link-text"
                 onClick={(e) => e.stopPropagation()}
               >
-                <ExternalLink className="w-5 h-5" />
+                Live Demo
               </a>
             </div>
           </div>
